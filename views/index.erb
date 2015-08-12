@@ -1,0 +1,9 @@
+<% if @saludar==nil %>
+<h1>Hola dime a quien saludar</h1>
+<form action="/" method="get">
+<input type="text" name="saludo">
+<input type="submit">
+</form>
+<% else %>
+<h1> Hola <%=@saludar%> </h1>
+<% end %>
